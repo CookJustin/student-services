@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.in28minutes.springboot.web")
 public class StudentServicesApplication {
 
 	public static void main(String[] args) {
