@@ -1,4 +1,4 @@
-package com.in28minutes.springboot.studentservices;
+package com.in28minutes.springboot.web;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
