@@ -1,0 +1,9 @@
+dependencies:
+- name: student-services
+  repository: file://../../services/student-services
+  version: 0.1.0
+- name: student-service-2
+  repository: file://../../services/student-service-2
+  version: 0.1.0
+digest: sha256:f394ce5004700faebec466bd1d637a7d4eb9cdf9a66ee22e36caf000bacdd708
+generated: "2023-01-02T00:34:13.652282-05:00"
