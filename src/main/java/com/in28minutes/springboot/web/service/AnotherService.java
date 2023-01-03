@@ -5,12 +5,15 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import java.net.URI;
+import java.util.Queue;
 
 @Service
 public class AnotherService {
-    URI uri = new URI("https://localhost:8080/doSomething");
-    RestTemplate restTemplate = new RestTemplate("https://localhost:8080/doSomething");
+    RestTemplate restTemplate = new RestTemplate();
+
     public int add(){
+        String t = restTemplate.getForObject("Http://localhost:8082/s2", String.class);
+        System.out.println(t);
         return 5 + 5;
     }
 }
