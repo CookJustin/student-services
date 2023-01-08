@@ -8,7 +8,7 @@ image:
   repository: jucook/student-services
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: 0.1
+  tag: "latest"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -37,8 +37,8 @@ securityContext: {}
   # runAsUser: 1000
 
 service:
-  type: ClusterIP
-  port: 80
+  type: LoadBalancer
+  port: 8080
 
 ingress:
   enabled: false

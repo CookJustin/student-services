@@ -1,0 +1,10 @@
+---  #The three - signal the start of the yaml file. I guess we can have 2 in one if we have another three ---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: development
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: production

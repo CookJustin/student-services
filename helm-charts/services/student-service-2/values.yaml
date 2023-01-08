@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   repository: jucook/student-service-2
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
 
@@ -38,7 +38,7 @@ securityContext: {}
 
 service:
   type: ClusterIP
-  port: 80
+  port: 8082
 
 ingress:
   enabled: false

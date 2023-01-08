@@ -5,5 +5,8 @@ dependencies:
 - name: student-service-2
   repository: file://../../services/student-service-2
   version: 0.1.0
-digest: sha256:f394ce5004700faebec466bd1d637a7d4eb9cdf9a66ee22e36caf000bacdd708
-generated: "2023-01-02T00:34:13.652282-05:00"
+- name: load-balancer
+  repository: file://../../services/load-balancer
+  version: 0.1.0
+digest: sha256:dd6de0444f55b818cb664a132c9a874adc856f63d359ed6bc630541b4177e216
+generated: "2023-01-07T16:46:24.789629-06:00"
