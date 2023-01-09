@@ -33,6 +33,9 @@ spec:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+          env:
+            - name: STUDENT_SERVICE_TWO
+              value: {{ include "student-services-2.fullName" . }}
           ports:
             - name: http
               containerPort: {{ .Values.service.port }}

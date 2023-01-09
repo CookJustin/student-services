@@ -30,6 +30,10 @@ Create chart name and version as used by the chart label.
 {{- printf "%s-%s" .Chart.Name .Chart.Version | replace "+" "_" | trunc 63 | trimSuffix "-" }}
 {{- end }}
 
+{{- define "student-services-2.fullName" -}}
+{{- printf "%s-%s" .Release.Name "student-service-2" | replace "+" "_" | trunc 63 | trimSuffix "-" }}
+{{- end }}
+
 {{/*
 Common labels
 */}}
